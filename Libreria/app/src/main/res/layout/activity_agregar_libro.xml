@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/agregarImagenUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Url de la imagen del libro"
+        android:textColorHint="@color/textohint"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/agregarNombreLibro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del libro"
+        android:textColorHint="@color/textohint"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+
+    <EditText
+        android:id="@+id/agregarAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/textohint"
+        android:hint="Autor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto" />
+
+    <EditText
+        android:id="@+id/agregarEditorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Editorial"
+        android:textSize="16sp"
+        android:textColorHint="@color/textohint"
+        android:textStyle="bold"
+        android:textColor="@color/texto" />
+
+    <EditText
+        android:id="@+id/agregarISBN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ISBN"
+        android:textSize="16sp"
+        android:textColorHint="@color/textohint"
+        android:textStyle="bold"
+        android:textColor="@color/texto" />
+
+    <EditText
+        android:id="@+id/agregarCalificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Calificación"
+        android:textSize="16sp"
+        android:textColorHint="@color/textohint"
+        android:textColor="@color/texto"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spinnerGeneros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/agregarSinopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sinopsis"
+            android:textSize="16sp"
+            android:textColorHint="@color/textohint"
+            android:textColor="@color/texto"
+            android:textStyle="bold"
+            android:minHeight="200dp"
+            android:gravity="top" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/botones"
+        android:text="Guardar"
+        android:textColor="@color/black" />
+
+</LinearLayout>

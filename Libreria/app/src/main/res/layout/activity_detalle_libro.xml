@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgLibro"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/great_1107_mlp"/>
+
+    <TextView
+        android:id="@+id/txtNombreLibro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Nombre del libro" />
+
+    <TextView
+        android:id="@+id/txtAutor"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/texto"
+        android:textSize="16sp"
+        android:text="Autor: " />
+
+    <TextView
+        android:id="@+id/txtEditorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:text="Editorial: " />
+
+    <TextView
+        android:id="@+id/txtISBN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto"
+        android:text="ISBN: " />
+
+    <TextView
+        android:id="@+id/txtCalificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/texto"
+        android:textStyle="bold"
+        android:text="Calificación: " />
+
+    <ScrollView
+        android:layout_width="383dp"
+        android:layout_height="174dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtSinopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sinopsis: "
+            android:textSize="16sp"
+            android:textColor="@color/texto"
+            android:textStyle="bold" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/botones"
+        android:text="Editar" />
+
+</LinearLayout>

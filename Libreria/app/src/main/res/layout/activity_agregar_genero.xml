@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Género"
+        android:textSize="24sp"
+        android:textColor="@color/texto"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/lblNombreGenero"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/textohint"
+        android:textColor="@color/texto"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del género"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/botones"
+        android:textColor="@color/black"/>
+</LinearLayout>
